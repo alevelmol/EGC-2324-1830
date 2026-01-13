@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'corsheaders',
     'django_filters',
+    'django_test',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_swagger',
@@ -151,7 +152,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+TEST_RUNNER = 'django_test.runner.DiscoverRunner'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
